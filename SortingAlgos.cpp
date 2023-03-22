@@ -6,7 +6,7 @@ using namespace std;
 using namespace std::chrono;
 
 template <class T>
-class SortAlgo
+class SortingAlgorithms
 {
 public:
     void writeOutput(T *arr, T n)
@@ -192,8 +192,8 @@ public:
             auto start = high_resolution_clock::now();
 
             // call sort
-            SortAlgo<lli> obj;
-            obj.quickSortRec(arr, j,k);
+            SortingAlgorithms<lli> obj;
+            obj.quickSortRec(arr, 0,n);
 
             // Stop measuring CPU time
             auto stop = high_resolution_clock::now();
